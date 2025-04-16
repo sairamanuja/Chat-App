@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
 
@@ -10,7 +11,7 @@ function App() {
   const inputRef = useRef();
 
   const connectToRoom = () => {
-    const ws = new WebSocket("ws://localhost:8080");
+    const ws = new WebSocket("https://chat-app-p36c.onrender.com");
 
     ws.onopen = () => {
       ws.send(JSON.stringify({
