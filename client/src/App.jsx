@@ -54,7 +54,7 @@ function App() {
           </button>
         </div>
       ) : (
-        <div className='h-[75%] w-[50%] bg-white rounded-lg shadow-lg flex flex-col'>
+        <div className='h-[500px] w-[350px]  bg-white rounded-lg shadow-lg flex flex-col'>
           <div className='bg-blue-500 text-white p-4 rounded-t-lg'>
             <h1 className='text-xl font-bold text-center'>Room: {roomId}</h1>
           </div>
@@ -70,7 +70,7 @@ function App() {
           </div>
 
           <div className='w-full bg-gray-200 p-4 rounded-b-lg'>
-            <div className='flex gap-2'>
+            <div className='flex flex-col sm:flex-row gap-2'>
               <input
                 ref={inputRef}
                 className="flex-1 p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
